@@ -13,10 +13,10 @@ let selected = -1;
 
 
 function preload() {
-	imgMask = loadImage('mask.png');
-	imgFace1 = loadImage('face.png')
-	imgFace2 = loadImage('face2.png')
-	imgFace3 = loadImage('face3.png')
+	imgMask = loadImage('mask1.png');
+	imgFace1 = loadImage('mask2.png')
+	imgFace2 = loadImage('mask3.png')
+	imgFace3 = loadImage('mask4.png')
 }
 
 function setup() {
@@ -32,7 +32,7 @@ function setup() {
 	videoInput.hide()
 
 	const sel = createSelect();
-	const selList = ['smile', 'Face(Aren)', 'Face(Smbat)', 'Face(Albert)']
+	const selList = ['Smile(surprised)', 'Smile(shocked)', 'Smile(sad)', 'Smile(happy)']
 
 	sel.option('Select filter', -1)
 
