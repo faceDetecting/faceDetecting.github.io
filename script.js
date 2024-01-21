@@ -72,18 +72,6 @@ function drawMask(customMask) {
 	}
 }
 
-// function drawFace() {
-// 	const positions = faceTracker.getCurrentPosition();
-// 	if(positions !== false) {
-// 		push();
-// 		const wx = Math.abs(positions[13][0] - positions[1][0]) * 2;
-// 		const wy = Math.abs(positions[7][1] - Math.min(positions[16][1], positions[20][1])) * 2;
-// 		translate(-wx/2, -wy/2)
-// 		image(imgFace, positions[62][0], positions[62][1], wx, wy);
-// 		pop();
-// 	}
-// }
-
 function windowResize() {
 	const maxWidth = Math.min(windowWidth, windowHeight);
 	pixelDensity(1)
